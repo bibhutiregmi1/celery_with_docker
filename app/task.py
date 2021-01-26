@@ -3,9 +3,8 @@ import time
 
 
 app = Celery('task',
-	backend='redis://localhost:6379',
-	broker='redis://localhost:6379')
-
+	backend='redis://127.0.0.1:6379',
+	broker='redis://127.0.0.1:6379')
 
 @app.task()
 def task():
